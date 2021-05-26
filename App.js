@@ -1,13 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Header from './src/components/Header';
+import Sidebar from '../linkedin/src/components/Sidebar'
+import './src/styles/App.css';
+import Feed from './src/components/Feed'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <div className='app'>
+      <Header/>
+      <div className='app_body'>
+        <Sidebar/>
+        <Feed/>
+      </div>
+    </div>
   );
 }
 

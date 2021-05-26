@@ -1,0 +1,8 @@
+.app_body{
+  display: flex;
+  margin-top: 20px;
+}
+
+.app{
+  background-color: #f3f2ef;
+}
